@@ -1,0 +1,204 @@
+/* ========= FRAME / BASE ========= */
+.page {
+  width: 1320px; /* matches panel & rows */
+  margin: 0 auto; /* center the page frame */
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f1f3f7;
+  margin: 0;
+  padding: 0;
+  color: #2e3a59;
+}
+
+/* ========= LOGO + TITLE ========= */
+.logo-row {
+  margin-top: 55px;
+  margin-left: 73px;
+}
+.logo {
+  width: 263px;
+  height: 55px;
+}
+
+.page-title {
+  text-align: center;
+  margin: 18px 0 32px 0; /* more space above the blue panel */
+  font-weight: 700;
+  font-size: 44px;
+  color: #36476d;
+
+  top: 146px;
+  left: 405px;
+
+  height: 45px;
+}
+
+/* ========= BUTTON RESET (prevents hidden padding from inflating pills) ========= */
+.add-btn,
+.delete-btn {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+}
+
+/* ========= BLUE PANEL ========= */
+.input-panel {
+  width: 1320px;
+  height: 143px;
+  border-radius: 30px;
+  border: 1px solid #afd7fa;
+  background: #a9cdf7;
+  margin: 0 auto 40px auto; /* more space before the rows */
+  box-sizing: border-box;
+  padding: 43px 39px 0 39px; /* top / right / bottom / left */
+  overflow: hidden;
+  top: 246px;
+  left: 73px;
+}
+
+.input-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 60px; /* field-to-field gap so ADD fits inside */
+  flex-wrap: nowrap;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* tighter colon → input gap */
+}
+
+.field label {
+  width: auto; /* don’t force overflow */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #eaf3ff;
+  margin: 0;
+}
+
+.field input {
+  width: 306px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #c7d6ea;
+  border-radius: 6px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.add-btn {
+  margin-left: auto; /* pin to the right INSIDE the panel */
+  width: 166px;
+  height: 57px;
+  border-radius: 20px;
+  background: #56c854;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: #42a861;
+}
+
+/* ========= LIST & ROWS ========= */
+.list {
+  width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.row {
+  width: 1320px;
+  height: 107px;
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 25px 50px;
+  box-sizing: border-box;
+
+  display: grid;
+  /* number | name | FLEX email zone | delete pill */
+  grid-template-columns: 30px 300px 1fr 126px;
+  column-gap: 121px;
+  align-items: center;
+
+  box-shadow: 0 6px 10px rgba(39, 53, 90, 0.08), 0 1px 0 rgba(39, 53, 90, 0.08);
+}
+
+/* number */
+.num-badge {
+  width: 30px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 40px;
+  color: #36476d;
+}
+
+/* name (stay on one line) */
+.name {
+  width: 300px;
+  height: 45px; /* match the grid column */
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: #36476d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* email centered in the full flexible middle zone */
+.email {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 32px;
+  color: #828ea6;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* DELETE pill (balanced size, sits inside on the far right) */
+.delete-btn {
+  justify-self: end; /* hugs the right edge within the row */
+  width: 166px;
+  height: 57px; /* taller for nice proportions */
+  border-radius: 20px;
+  background: #ff7676;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 30px; /* readable inside 45px height */
+  letter-spacing: 0;
+  line-height: 100%;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background: #e8645e;
+}
