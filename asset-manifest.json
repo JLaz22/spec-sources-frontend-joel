@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spec-sources-frontend-joel/static/css/main.d9ad5ccf.css",
+    "main.js": "/spec-sources-frontend-joel/static/js/main.10cbae50.js",
+    "static/js/453.961cefed.chunk.js": "/spec-sources-frontend-joel/static/js/453.961cefed.chunk.js",
+    "index.html": "/spec-sources-frontend-joel/index.html",
+    "main.d9ad5ccf.css.map": "/spec-sources-frontend-joel/static/css/main.d9ad5ccf.css.map",
+    "main.10cbae50.js.map": "/spec-sources-frontend-joel/static/js/main.10cbae50.js.map",
+    "453.961cefed.chunk.js.map": "/spec-sources-frontend-joel/static/js/453.961cefed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9ad5ccf.css",
+    "static/js/main.10cbae50.js"
+  ]
+}
